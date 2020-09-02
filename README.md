@@ -10,7 +10,7 @@ Calculate PI using [Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_metho
 mvn package
 ```
 
-### Unit test (with covertura)
+### Unit test (with cobertura)
 
 ```BASH
 mvn clean scoverage:report
@@ -32,6 +32,7 @@ docker run -it --rm \
   -e URL=test.csv \
   montecarlopi
 ```
+
 ### Run with GCS save
 
 ```BASH

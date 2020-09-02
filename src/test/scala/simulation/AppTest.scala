@@ -10,7 +10,7 @@ class AppTest extends FlatSpec {
         val method = App.getClass.getDeclaredMethod("montecarloPi", classOf[Long])
         method.setAccessible(true)
         
-        val data = method.invoke(App, 10.asInstanceOf[Object]).asInstanceOf[DataFrame]
+        val data = method.invoke(App, numRows.asInstanceOf[Object]).asInstanceOf[DataFrame]
 
         assert(data.count == numRows)
     }
